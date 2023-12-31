@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cafetaria Yogyakarta</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+      }
+
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/CAFE/cafe1.jpg");
+        min-height: 75%;
+      }
+
+      .menu {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <a href="#" class="w3-button w3-block w3-black">BERANDA</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#about" class="w3-button w3-block w3-black">PILIHAN</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#where" class="w3-button w3-block w3-black">LOKASI</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div
+        class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small"
+      >
+        <span class="w3-tag">Buka Dari Pukul 10.00-23.00 WIB</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size: 90px"
+          >Cafetaria<br />Yogyakarta</span
+        >
+      </div>
+      <div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white"></span>
+      </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+      <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-64">
+            <span class="w3-tag w3-wide">TENTANG CAFE</span>
+          </h5>
+          <p>
+            Kafe ini didirikan di Yogyakarta sejak tahun 2019 tepat di sebelah
+            Tugu Yogyakarta. Cafe ini menyediakan aneka jenis minuman dan kue,
+            terutama bagi pecinta kopi. Anda bisa mendapatkan kopi dengan
+            kualitas terbaik..
+          </p>
+          <p>
+            Selain menu minuman dan kue kami juga menyediakan makanan berat
+            seperti pizza, rice bowl, roti bakar, dan aneka cemilan lainnya.
+            kami menyediakan layanan berdasarkan pesanan, serta pilihan makanan
+            pendamping dan salad serta makanan enak lainnya..
+          </p>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p><i>"Jogja Kota Sejuta Kenangan .</i></p>
+            <p></p>
+          </div>
+          <img
+            src="/CAFE/cafe2.jpg"
+            style="width: 100%; max-width: 1000px"
+            class="w3-margin-top"
+          />
+          <p><strong>Buka Pukul:</strong> Setiap Hari Dari 10.00-23.00 WIB.</p>
+          <p><strong>Alamat:</strong> Tugu Yogyakarta</p>
+        </div>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="w3-container" id="menu">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">MENU</span>
+          </h5>
+
+          <div class="w3-row w3-center w3-card w3-padding">
+            <a
+              href="javascript:void(0)"
+              onclick="openMenu(event, 'Eat');"
+              id="myLink"
+            >
+              <div class="w3-col s6 tablink">Makanan</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+              <div class="w3-col s6 tablink">Minuman</div>
+            </a>
+          </div>
+
+          <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Pizza</h5>
+            <p class="w3-text-grey">
+              Dengan aneka topping sosis, keju, sayuran, dan saus tomat
+            </p>
+            <br />
+
+            <h5>Rice Bowl</h5>
+            <p class="w3-text-grey">
+              Nasi yang disajikan dengan sayuran dan ayam. Tersedia varian Black
+              Paper, Rendang, Teriyaki dan Hot Lava
+            </p>
+            <br />
+
+            <h5>Roti Bakar</h5>
+            <p class="w3-text-grey">
+              Roti bakar yang disajikan dengan selai coklat dan susu
+            </p>
+            <br />
+
+            <h5>Croisant</h5>
+            <p class="w3-text-grey">
+              Roti yang di oven dengan isian coklat, matcha, dan vanilla
+            </p>
+            <br />
+
+            <h5>Spagety</h5>
+            <p class="w3-text-grey">
+              Pasta yang di sajikan dengan sause dan aneka topping
+            </p>
+          </div>
+
+          <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+            <h5>cappucino</h5>
+            <p class="w3-text-grey">Capcino tambahan cincau dan boba</p>
+            <br />
+
+            <h5>Americano</h5>
+            <p class="w3-text-grey">Kopi tanpa gula</p>
+            <br />
+
+            <h5>Espresso</h5>
+            <p class="w3-text-grey">Kopi double shoot atau one shoot</p>
+            <br />
+
+            <h5>Thai tea</h5>
+            <p class="w3-text-grey">Teh dengan campuran Susu</p>
+            <br />
+
+            <h5>Eskrim Vanilla</h5>
+            <p class="w3-text-grey">Corn dan Eskrim</p>
+          </div>
+          <img
+            src="/CAFE/cafe3.jpg"
+            style="width: 100%; max-width: 1000px; margin-top: 32px"
+          />
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="where" style="padding-bottom: 32px">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">LOKASI KAMI</span>
+          </h5>
+          <p>Nikmati waktu luang di cafe kami.</p>
+          <img src="/CAFE/cafe4.jpg" class="w3-image" style="width: 100%" />
+          <p>
+            <span class="w3-tag">Kami memahami kebutuhan Anda dan
+            kami akan menyediakan makanan untuk memenuhi kriteria terbesar, baik
+            tampilan maupun rasa. .
+          </p>
+          <p><strong>Message</strong> kirimkan pesan kepada kami:</p>
+          <form action="/action_page.php" target="_blank">
+            <p>
+              <input
+                class="w3-input w3-padding-16 w3-border"
+                type="text"
+                placeholder="Nama"
+                required
+                name="Name"
+              />
+            </p>
+            <p>
+              <input
+                class="w3-input w3-padding-16 w3-border"
+                type="number"
+                placeholder="berapa orang"
+                required
+                name="People"
+              />
+            </p>
+            <p>
+              <input
+                class="w3-input w3-padding-16 w3-border"
+                type="datetime-local"
+                placeholder="Date and time"
+                required
+                name="date"
+                value="2024-01-02T20:00"
+              />
+            </p>
+            <p>
+              <input
+                class="w3-input w3-padding-16 w3-border"
+                type="text"
+                placeholder="Pesanan \ Pesanan Spesial"
+                required
+                name="Message"
+              />
+            </p>
+            <p>
+              <button class="w3-button w3-black" type="submit">
+                Kirim Pesanan
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " w3-dark-grey",
+            ""
+          );
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+      document.getElementById("myLink").click();
+    </script>
+  </body>
+</html>
